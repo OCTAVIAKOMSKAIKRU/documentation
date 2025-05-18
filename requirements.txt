@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+pdf-bank-statement-parser         # FNB PDF parsing
+pypdfium2                         # PDF text extraction
+python-multipart                  # form-data uploads
+sqlalchemy
+databases                         # async DB 
+pydantic
+python-dotenv                     # .env support

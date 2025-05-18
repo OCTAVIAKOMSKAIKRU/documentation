@@ -1,0 +1,158 @@
+import os, io, re, json
+from datetime import date
+import pandas as pd
+import pypdfium2 as pdfium
+import streamlit as st
+import pdfplumber
+import pytesseract
+from PIL import Image
+import io
+
+# ─── CONFIG ─────────────────────────────────────────────────────────
+DATA_DIR = "data"
+USER_ID = "1"
+JSON_PATH = os.path.join(DATA_DIR, f"user_{USER_ID}.json")
+os.makedirs(DATA_DIR, exist_ok=True)
+
+# ─── PARSERS ─────────────────────────────────────────────────────────
+@st.cache_data
+def extract_text_from_pdf(file_bytes: bytes) -> str:
+    text_pages = []
+    with pdfplumber.open(io.BytesIO(file_bytes)) as pdf:
+        for page in pdf.pages:
+            # try text first
+            txt = page.extract_text() or ""
+            if not txt.strip():
+                # fallback to OCR on a page image
+                img = page.to_image(resolution=200).original
+                txt = pytesseract.image_to_string(img)
+            text_pages.append(txt)
+    return "\n".join(text_pages)
+
+
+def parse_absa_pdf(file_bytes: bytes) -> list[dict]:
+    raw = extract_text_from_pdf(file_bytes)
+    lines = raw.splitlines()
+    st.sidebar.text_area("PDF Preview (first 2600 chars)", raw[:2600], height=200)
+
+    txns = []
+    date_re = re.compile(r"^\d{1,2}/\d{1,2}/\d{4}")
+    for line in lines:
+        line = line.strip()
+        if date_re.match(line):
+            parts = line.split()
+            # at minimum we need date + description + amount + balance
+            if len(parts) >= 4:
+                dt_str = parts[0]
+                desc = " ".join(parts[1:-2])
+                amt_str = parts[-2].replace(",", "")
+                bal_str = parts[-1].replace(",", "")
+                try:
+                    d = datetime.strptime(dt_str, "%d/%m/%Y").date()
+                    amount = float(amt_str)
+                    balance = float(bal_str)
+                    txns.append({
+                        "date":       d.isoformat(),
+                        "description": desc,
+                        "amount":     amount,
+                        "balance":    balance
+                    })
+                except Exception as e:
+                    # skip lines that don't parse
+                    continue
+
+    if not txns:
+        st.warning("No rows found—tweak the preview or parser logic above.")
+    return txns
+
+
+def parse_csv_file(file_bytes: bytes) -> list[dict]:
+    s = file_bytes.decode("utf-8", errors="ignore")
+    df = pd.read_csv(io.StringIO(s))
+    txns=[]
+    for _, row in df.iterrows():
+        raw_date = str(row.get("Date", row.get("Transaction Date", "")))
+        date_str = raw_date.splitlines()[0].strip()
+        dt = pd.to_datetime(date_str, dayfirst=True)
+        debit  = float(row.get("Debit", 0) or 0)
+        credit = float(row.get("Credit", 0) or 0)
+        bal    = float(str(row.get("Balance", row.get("Running Balance", 0))).replace(",", ""))
+        amt = credit - debit
+        txns.append({"date": date_str, "description": row.get("Description", row.get("Narrative","")).strip(), "amount": amt, "balance": bal})
+    return txns
+
+# ─── STORAGE ─────────────────────────────────────────────────────────
+def load_transactions():
+    return json.load(open(JSON_PATH)) if os.path.exists(JSON_PATH) else []
+
+def save_transactions(txns):
+    with open(JSON_PATH, "w") as f:
+        json.dump(txns, f, indent=2, default=str)
+
+# ─── UI ──────────────────────────────────────────────────────────────
+st.title("📊 Second Story Finance MVP")
+st.sidebar.header("1. Upload Statement")
+
+# Upload widgets
+up1 = st.sidebar.file_uploader("PDF/CSV (sidebar)", type=["pdf","csv"])
+up2 = st.file_uploader("Or upload here", type=["pdf","csv"])
+uploaded = up1 or up2
+
+if uploaded:
+    raw = uploaded.read()
+    fname = uploaded.name.lower()
+
+    if fname.endswith(".csv"):
+        new_txns = parse_csv_file(raw)
+    else:
+        new_txns = parse_absa_pdf(raw)
+
+    all_txns = load_transactions()
+    all_txns.extend(new_txns)
+
+    # dedupe
+    seen, unique = set(), []
+    for t in all_txns:
+        key = (t['date'], t['description'], t['amount'])
+        if key not in seen:
+            seen.add(key)
+            unique.append(t)
+
+    save_transactions(unique)
+    st.success(f"✅ {len(new_txns)} transactions added, {len(unique)} total now")
+
+# Show exactly where we wrote the JSON and what’s inside
+    st.sidebar.markdown("**Data stored in**:")
+    st.sidebar.code(JSON_PATH)
+    st.sidebar.markdown("**Contents of the JSON file:**")
+    st.sidebar.json(unique)
+
+# Review section
+st.header("2. Review Transactions")
+txns = load_transactions()
+if txns:
+    df = pd.DataFrame(txns)
+    edited = st.data_editor(df, num_rows="dynamic")
+    if st.button("Save Edits"):
+        save_transactions(edited.to_dict("records"))
+        st.success("Changes saved")
+else:
+    st.info("No transactions found. Upload first.")
+
+# Dashboard
+st.header("3. Dashboard Stub")
+if txns:
+    df = pd.DataFrame(txns)
+    st.metric("Total Income", f"R {df[df.amount>0].amount.sum():,.2f}")
+    st.metric("Total Expenses", f"R {-df[df.amount<0].amount.sum():,.2f}")
+
+    st.subheader("Spend by Category")
+    cat = df.assign(cat="Uncategorized").groupby("cat")["amount"].sum().abs()
+    st.bar_chart(cat)
+
+    st.subheader("Monthly Trend")
+    df['mon'] = pd.to_datetime(df.date).dt.to_period('M').astype(str)
+    trend = df.groupby('mon')['amount'].sum().cumsum()
+    st.line_chart(trend)
+else:
+    st.info("No data to display on dashboard.")

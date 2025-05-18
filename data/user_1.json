@@ -1,0 +1,14 @@
+[
+  {
+    "date": "2025-05-18",
+    "description": "Demo Income",
+    "amount": 1000,
+    "balance": 1000
+  },
+  {
+    "date": "2025-05-18",
+    "description": "Demo Expense",
+    "amount": -200,
+    "balance": 800
+  }
+]
