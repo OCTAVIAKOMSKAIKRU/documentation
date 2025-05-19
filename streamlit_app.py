@@ -1,5 +1,6 @@
 import os, io, re, json
 from datetime import date
+import datetime
 import pandas as pd
 import pypdfium2 as pdfium
 import streamlit as st
@@ -36,34 +37,46 @@ def parse_absa_pdf(file_bytes: bytes) -> list[dict]:
     st.sidebar.text_area("PDF Preview (first 2600 chars)", raw[:2600], height=200)
 
     txns = []
-    date_re = re.compile(r"^\d{1,2}/\d{1,2}/\d{4}")
+    line_re = re.compile(r"^(\d{1,2}/\d{1,2}/\d{4})\s+(.+?)\s+([\d,.]+)\s+([\d,.]+)$")
+
     for line in lines:
         line = line.strip()
-        if date_re.match(line):
-            parts = line.split()
-            # at minimum we need date + description + amount + balance
-            if len(parts) >= 4:
-                dt_str = parts[0]
-                desc = " ".join(parts[1:-2])
-                amt_str = parts[-2].replace(",", "")
-                bal_str = parts[-1].replace(",", "")
-                try:
-                    d = datetime.strptime(dt_str, "%d/%m/%Y").date()
-                    amount = float(amt_str)
-                    balance = float(bal_str)
-                    txns.append({
-                        "date":       d.isoformat(),
-                        "description": desc,
-                        "amount":     amount,
-                        "balance":    balance
-                    })
-                except Exception as e:
-                    # skip lines that don't parse
-                    continue
+        match = line_re.match(line)
+        if not match:
+            continue
+        date_str, desc, amt_str, bal_str = match.groups()
+        try:
+            d = datetime.datetime.strptime(date_str, "%d/%m/%Y").date()
+            amt = float(amt_str.replace(",", ""))
+            bal = float(bal_str.replace(",", ""))
+
+            txns.append({
+                "date": d.isoformat(),
+                "description": desc,
+                "raw_amount": amt,     # keep raw amount for comparison
+                "balance": bal
+            })
+        except Exception:
+            continue
+
+    # Infer direction (debit/credit) based on balance difference
+    for i in range(len(txns)):
+        if i == 0:
+            # First row — can't compare, default to positive
+            txns[i]["amount"] = txns[i]["raw_amount"]
+        else:
+            prev_bal = txns[i - 1]["balance"]
+            curr_bal = txns[i]["balance"]
+            delta = round(curr_bal - prev_bal, 2)
+            txns[i]["amount"] = delta
+
+        del txns[i]["raw_amount"]  # clean up
 
     if not txns:
-        st.warning("No rows found—tweak the preview or parser logic above.")
+        st.warning("No transactions matched. Tweak the parser.")
     return txns
+
+
 
 
 def parse_csv_file(file_bytes: bytes) -> list[dict]:
@@ -103,12 +116,12 @@ if uploaded:
     fname = uploaded.name.lower()
 
     if fname.endswith(".csv"):
-        new_txns = parse_csv_file(raw)
+        txns = parse_csv_file(raw)
     else:
-        new_txns = parse_absa_pdf(raw)
+        txns = parse_absa_pdf(raw)
 
     all_txns = load_transactions()
-    all_txns.extend(new_txns)
+    all_txns.extend(txns)
 
     # dedupe
     seen, unique = set(), []
@@ -119,13 +132,13 @@ if uploaded:
             unique.append(t)
 
     save_transactions(unique)
-    st.success(f"✅ {len(new_txns)} transactions added, {len(unique)} total now")
+    st.success(f"✅ {len(txns)} transactions added, {len(unique)} total now")
 
-# Show exactly where we wrote the JSON and what’s inside
-    st.sidebar.markdown("**Data stored in**:")
-    st.sidebar.code(JSON_PATH)
-    st.sidebar.markdown("**Contents of the JSON file:**")
-    st.sidebar.json(unique)
+# Show where we store data and confirm it's working
+    st.sidebar.markdown("✅ **Data saved to:**")
+    st.sidebar.code(os.path.abspath(JSON_PATH))
+    st.sidebar.markdown("📄 **Saved transactions:**")
+    st.sidebar.json(unique if unique else {})
 
 # Review section
 st.header("2. Review Transactions")

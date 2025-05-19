@@ -1,14 +1,800 @@
 [
   {
-    "date": "2025-05-18",
-    "description": "Demo Income",
-    "amount": 1000,
-    "balance": 1000
+    "date": "2024-09-21",
+    "description": "Can Cashsend Ib Settlement",
+    "amount": 200.0,
+    "balance": 406.43
   },
   {
-    "date": "2025-05-18",
-    "description": "Demo Expense",
-    "amount": -200,
-    "balance": 800
+    "date": "2024-09-23",
+    "description": "Npf Credit Jhb Inn Ci 13 586.25",
+    "amount": 13.0,
+    "balance": 992.68
+  },
+  {
+    "date": "2024-09-23",
+    "description": "Payshap Ext Debit Settlement 7.50 A 500.00",
+    "amount": 13.0,
+    "balance": 492.68
+  },
+  {
+    "date": "2024-09-23",
+    "description": "Proof Of Paymt Sms Settlement 1.25 A",
+    "amount": 13.0,
+    "balance": 492.68
+  },
+  {
+    "date": "2024-09-23",
+    "description": "Digital Transf Dt Settlement 1 000.00",
+    "amount": 12.0,
+    "balance": 492.68
+  },
+  {
+    "date": "2024-09-23",
+    "description": "Digital Transf Dt Settlement 5 000.00",
+    "amount": 7.0,
+    "balance": 492.68
+  },
+  {
+    "date": "2024-09-24",
+    "description": "Cashsend Digital Settlement 2.50 T 100.00",
+    "amount": 7.0,
+    "balance": 392.68
+  },
+  {
+    "date": "2024-09-24",
+    "description": "Pos Purchase Settlement 218.70",
+    "amount": 7.0,
+    "balance": 173.98
+  },
+  {
+    "date": "2024-09-24",
+    "description": "Pos Purchase Settlement 25.00",
+    "amount": 7.0,
+    "balance": 148.98
+  },
+  {
+    "date": "2024-09-24",
+    "description": "Pos Purchase Settlement 67.00",
+    "amount": 7.0,
+    "balance": 81.98
+  },
+  {
+    "date": "2024-09-25",
+    "description": "Imdte Digital Pmt Settlement 40.00 A 4 300.00",
+    "amount": 2.0,
+    "balance": 781.98
+  },
+  {
+    "date": "2024-09-25",
+    "description": "Proof Of Paymt Sms Settlement 1.25 A",
+    "amount": 2.0,
+    "balance": 781.98
+  },
+  {
+    "date": "2024-09-25",
+    "description": "Dc Track Internal Settlement 550.00",
+    "amount": 2.0,
+    "balance": 231.98
+  },
+  {
+    "date": "2024-09-26",
+    "description": "Archive Stmt Enq Settlement 10.00 A",
+    "amount": 2.0,
+    "balance": 231.98
+  },
+  {
+    "date": "2024-09-26",
+    "description": "Pos Purchase Settlement 219.70",
+    "amount": 2.0,
+    "balance": 12.28
+  },
+  {
+    "date": "2024-09-26",
+    "description": "Pos Purchase Settlement 19.00",
+    "amount": 1.0,
+    "balance": 993.28
+  },
+  {
+    "date": "2024-09-26",
+    "description": "Pos Purchase Settlement 40.00",
+    "amount": 1.0,
+    "balance": 953.28
+  },
+  {
+    "date": "2024-09-26",
+    "description": "Pos Purchase Settlement 51.00",
+    "amount": 1.0,
+    "balance": 902.28
+  },
+  {
+    "date": "2024-09-26",
+    "description": "Digital Transf Cr Settlement 2 000.00",
+    "amount": 3.0,
+    "balance": 902.28
+  },
+  {
+    "date": "2024-09-27",
+    "description": "Pos Purchase Settlement 480.00",
+    "amount": 3.0,
+    "balance": 422.28
+  },
+  {
+    "date": "2024-09-27",
+    "description": "Pos Purchase Settlement 465.00",
+    "amount": 2.0,
+    "balance": 957.28
+  },
+  {
+    "date": "2024-09-27",
+    "description": "Pos Purchase Settlement 50.00",
+    "amount": 2.0,
+    "balance": 907.28
+  },
+  {
+    "date": "2024-09-27",
+    "description": "Pos Purchase Settlement 100.40",
+    "amount": 2.0,
+    "balance": 806.88
+  },
+  {
+    "date": "2024-09-28",
+    "description": "Pos Purchase Settlement 55.00",
+    "amount": 2.0,
+    "balance": 751.88
+  },
+  {
+    "date": "2024-09-28",
+    "description": "Pos Purchase Settlement 92.00",
+    "amount": 2.0,
+    "balance": 659.88
+  },
+  {
+    "date": "2024-09-28",
+    "description": "Pos Purchase Settlement 127.00",
+    "amount": 2.0,
+    "balance": 532.88
+  },
+  {
+    "date": "2024-09-28",
+    "description": "Pos Purchase Settlement 115.00",
+    "amount": 2.0,
+    "balance": 417.88
+  },
+  {
+    "date": "2024-09-29",
+    "description": "Pos Purchase Settlement 80.00",
+    "amount": 2.0,
+    "balance": 337.88
+  },
+  {
+    "date": "2024-09-29",
+    "description": "Pos Purchase Settlement 71.00",
+    "amount": 2.0,
+    "balance": 266.88
+  },
+  {
+    "date": "2024-09-29",
+    "description": "Digital Transf Cr Settlement 710.00",
+    "amount": 2.0,
+    "balance": 976.88
+  },
+  {
+    "date": "2024-10-01",
+    "description": "Pos Purchase Settlement 162.00",
+    "amount": 2.0,
+    "balance": 814.88
+  },
+  {
+    "date": "2024-10-01",
+    "description": "Pos Purchase Settlement 31.00",
+    "amount": 2.0,
+    "balance": 783.88
+  },
+  {
+    "date": "2024-10-01",
+    "description": "Pos Purchase Settlement 10.00",
+    "amount": 2.0,
+    "balance": 742.88
+  },
+  {
+    "date": "2024-10-01",
+    "description": "Pos Purchase Settlement 785.75",
+    "amount": 1.0,
+    "balance": 957.13
+  },
+  {
+    "date": "2024-10-01",
+    "description": "Transaction Charge Headoffice * 24.00",
+    "amount": 1.0,
+    "balance": 933.13
+  },
+  {
+    "date": "2024-10-01",
+    "description": "Admin Charge Headoffice * 91.25",
+    "amount": 1.0,
+    "balance": 841.88
+  },
+  {
+    "date": "2024-10-02",
+    "description": "Pos Purchase Settlement 49.00",
+    "amount": 1.0,
+    "balance": 792.88
+  },
+  {
+    "date": "2024-10-02",
+    "description": "Pos Purchase Settlement 113.00",
+    "amount": 1.0,
+    "balance": 679.88
+  },
+  {
+    "date": "2024-10-02",
+    "description": "Pos Purchase Settlement 249.90",
+    "amount": 1.0,
+    "balance": 429.98
+  },
+  {
+    "date": "2024-10-02",
+    "description": "Pos Purchase Settlement 78.00",
+    "amount": 1.0,
+    "balance": 351.98
+  },
+  {
+    "date": "2024-10-02",
+    "description": "Pos Purchase Settlement 288.80",
+    "amount": 1.0,
+    "balance": 63.18
+  },
+  {
+    "date": "2024-10-02",
+    "description": "Pos Purchase Settlement",
+    "amount": 80.0,
+    "balance": 983.18
+  },
+  {
+    "date": "2024-10-02",
+    "description": "Pos Card Refund Settlement",
+    "amount": 10.0,
+    "balance": 993.18
+  },
+  {
+    "date": "2024-10-03",
+    "description": "Pos Purchase Settlement",
+    "amount": 52.0,
+    "balance": 941.18
+  },
+  {
+    "date": "2024-10-03",
+    "description": "Overseas Purchase Settlement 4.00 T",
+    "amount": 0.17,
+    "balance": 941.01
+  },
+  {
+    "date": "2024-10-04",
+    "description": "Payshap Ext Credit Settlement 130.00",
+    "amount": 1.0,
+    "balance": 71.01
+  },
+  {
+    "date": "2024-10-04",
+    "description": "Notific Fee Sms Notifyme",
+    "amount": 1.0,
+    "balance": 71.01
+  },
+  {
+    "date": "2024-10-05",
+    "description": "Pos Purchase Settlement",
+    "amount": 249.9,
+    "balance": 821.11
+  },
+  {
+    "date": "2024-10-05",
+    "description": "Pos Purchase Settlement",
+    "amount": 175.0,
+    "balance": 646.11
+  },
+  {
+    "date": "2024-10-05",
+    "description": "Payshap Ext Debit Settlement 7.50 A",
+    "amount": 300.0,
+    "balance": 346.11
+  },
+  {
+    "date": "2024-10-06",
+    "description": "Pos Purchase Settlement",
+    "amount": 89.0,
+    "balance": 257.11
+  },
+  {
+    "date": "2024-10-06",
+    "description": "Cashsend Digital Settlement 5.00 T",
+    "amount": 120.0,
+    "balance": 137.11
+  },
+  {
+    "date": "2024-10-06",
+    "description": "Digital Transf Cr Settlement",
+    "amount": 460.0,
+    "balance": 597.11
+  },
+  {
+    "date": "2024-10-08",
+    "description": "Pos Purchase Settlement",
+    "amount": 108.0,
+    "balance": 489.11
+  },
+  {
+    "date": "2024-10-08",
+    "description": "Pos Purchase Settlement",
+    "amount": 50.0,
+    "balance": 439.11
+  },
+  {
+    "date": "2024-10-09",
+    "description": "Pos Purchase Settlement",
+    "amount": 270.9,
+    "balance": 168.21
+  },
+  {
+    "date": "2024-10-10",
+    "description": "Digital Transf Cr Settlement",
+    "amount": 500.0,
+    "balance": 668.21
+  },
+  {
+    "date": "2024-10-10",
+    "description": "Pos Purchase Settlement",
+    "amount": 60.0,
+    "balance": 608.21
+  },
+  {
+    "date": "2024-10-10",
+    "description": "Pos Purchase Settlement",
+    "amount": 63.0,
+    "balance": 545.21
+  },
+  {
+    "date": "2024-10-11",
+    "description": "Pos Purchase Settlement",
+    "amount": 387.2,
+    "balance": 158.01
+  },
+  {
+    "date": "2024-10-11",
+    "description": "Digital Transf Cr Settlement",
+    "amount": 200.0,
+    "balance": 358.01
+  },
+  {
+    "date": "2024-10-12",
+    "description": "Pos Purchase Settlement",
+    "amount": 10.0,
+    "balance": 348.01
+  },
+  {
+    "date": "2024-10-12",
+    "description": "Pos Purchase Settlement",
+    "amount": 23.0,
+    "balance": 325.01
+  },
+  {
+    "date": "2024-10-15",
+    "description": "Pos Purchase Settlement",
+    "amount": 31.0,
+    "balance": 294.01
+  },
+  {
+    "date": "2024-10-16",
+    "description": "Pos Purchase Settlement",
+    "amount": 130.0,
+    "balance": 133.01
+  },
+  {
+    "date": "2024-10-16",
+    "description": "Digital Transf Cr Settlement",
+    "amount": 600.0,
+    "balance": 733.01
+  },
+  {
+    "date": "2024-10-16",
+    "description": "Airtime Debit At 006",
+    "amount": 70.0,
+    "balance": 663.01
+  },
+  {
+    "date": "2024-10-18",
+    "description": "Digital Transf Cr Settlement",
+    "amount": 300.0,
+    "balance": 963.01
+  },
+  {
+    "date": "2024-10-19",
+    "description": "Pos Purchase Settlement",
+    "amount": 69.0,
+    "balance": 894.01
+  },
+  {
+    "date": "2024-10-19",
+    "description": "Pos Purchase Settlement",
+    "amount": 198.0,
+    "balance": 696.01
+  },
+  {
+    "date": "2024-09-23",
+    "description": "Npf Credit Jhb Inn Ci 13 586.25",
+    "balance": 992.68,
+    "amount": 586.25
+  },
+  {
+    "date": "2024-09-23",
+    "description": "Payshap Ext Debit Settlement 7.50 A 500.00",
+    "balance": 492.68,
+    "amount": -500.0
+  },
+  {
+    "date": "2024-09-23",
+    "description": "Proof Of Paymt Sms Settlement 1.25 A",
+    "balance": 492.68,
+    "amount": 0.0
+  },
+  {
+    "date": "2024-09-23",
+    "description": "Digital Transf Dt Settlement 1 000.00",
+    "balance": 492.68,
+    "amount": 0.0
+  },
+  {
+    "date": "2024-09-23",
+    "description": "Digital Transf Dt Settlement 5 000.00",
+    "balance": 492.68,
+    "amount": 0.0
+  },
+  {
+    "date": "2024-09-24",
+    "description": "Cashsend Digital Settlement 2.50 T 100.00",
+    "balance": 392.68,
+    "amount": -100.0
+  },
+  {
+    "date": "2024-09-24",
+    "description": "Pos Purchase Settlement 218.70",
+    "balance": 173.98,
+    "amount": -218.7
+  },
+  {
+    "date": "2024-09-24",
+    "description": "Pos Purchase Settlement 25.00",
+    "balance": 148.98,
+    "amount": -25.0
+  },
+  {
+    "date": "2024-09-24",
+    "description": "Pos Purchase Settlement 67.00",
+    "balance": 81.98,
+    "amount": -67.0
+  },
+  {
+    "date": "2024-09-25",
+    "description": "Imdte Digital Pmt Settlement 40.00 A 4 300.00",
+    "balance": 781.98,
+    "amount": 700.0
+  },
+  {
+    "date": "2024-09-25",
+    "description": "Proof Of Paymt Sms Settlement 1.25 A",
+    "balance": 781.98,
+    "amount": 0.0
+  },
+  {
+    "date": "2024-09-25",
+    "description": "Dc Track Internal Settlement 550.00",
+    "balance": 231.98,
+    "amount": -550.0
+  },
+  {
+    "date": "2024-09-26",
+    "description": "Archive Stmt Enq Settlement 10.00 A",
+    "balance": 231.98,
+    "amount": 0.0
+  },
+  {
+    "date": "2024-09-26",
+    "description": "Pos Purchase Settlement 219.70",
+    "balance": 12.28,
+    "amount": -219.7
+  },
+  {
+    "date": "2024-09-26",
+    "description": "Pos Purchase Settlement 19.00",
+    "balance": 993.28,
+    "amount": 981.0
+  },
+  {
+    "date": "2024-09-26",
+    "description": "Pos Purchase Settlement 40.00",
+    "balance": 953.28,
+    "amount": -40.0
+  },
+  {
+    "date": "2024-09-26",
+    "description": "Pos Purchase Settlement 51.00",
+    "balance": 902.28,
+    "amount": -51.0
+  },
+  {
+    "date": "2024-09-26",
+    "description": "Digital Transf Cr Settlement 2 000.00",
+    "balance": 902.28,
+    "amount": 0.0
+  },
+  {
+    "date": "2024-09-27",
+    "description": "Pos Purchase Settlement 480.00",
+    "balance": 422.28,
+    "amount": -480.0
+  },
+  {
+    "date": "2024-09-27",
+    "description": "Pos Purchase Settlement 465.00",
+    "balance": 957.28,
+    "amount": 535.0
+  },
+  {
+    "date": "2024-09-27",
+    "description": "Pos Purchase Settlement 50.00",
+    "balance": 907.28,
+    "amount": -50.0
+  },
+  {
+    "date": "2024-09-27",
+    "description": "Pos Purchase Settlement 100.40",
+    "balance": 806.88,
+    "amount": -100.4
+  },
+  {
+    "date": "2024-09-28",
+    "description": "Pos Purchase Settlement 55.00",
+    "balance": 751.88,
+    "amount": -55.0
+  },
+  {
+    "date": "2024-09-28",
+    "description": "Pos Purchase Settlement 92.00",
+    "balance": 659.88,
+    "amount": -92.0
+  },
+  {
+    "date": "2024-09-28",
+    "description": "Pos Purchase Settlement 127.00",
+    "balance": 532.88,
+    "amount": -127.0
+  },
+  {
+    "date": "2024-09-28",
+    "description": "Pos Purchase Settlement 115.00",
+    "balance": 417.88,
+    "amount": -115.0
+  },
+  {
+    "date": "2024-09-29",
+    "description": "Pos Purchase Settlement 80.00",
+    "balance": 337.88,
+    "amount": -80.0
+  },
+  {
+    "date": "2024-09-29",
+    "description": "Pos Purchase Settlement 71.00",
+    "balance": 266.88,
+    "amount": -71.0
+  },
+  {
+    "date": "2024-09-29",
+    "description": "Digital Transf Cr Settlement 710.00",
+    "balance": 976.88,
+    "amount": 710.0
+  },
+  {
+    "date": "2024-10-01",
+    "description": "Pos Purchase Settlement 162.00",
+    "balance": 814.88,
+    "amount": -162.0
+  },
+  {
+    "date": "2024-10-01",
+    "description": "Pos Purchase Settlement 31.00",
+    "balance": 783.88,
+    "amount": -31.0
+  },
+  {
+    "date": "2024-10-01",
+    "description": "Pos Purchase Settlement 10.00",
+    "balance": 742.88,
+    "amount": -10.0
+  },
+  {
+    "date": "2024-10-01",
+    "description": "Pos Purchase Settlement 785.75",
+    "balance": 957.13,
+    "amount": 214.25
+  },
+  {
+    "date": "2024-10-01",
+    "description": "Transaction Charge Headoffice * 24.00",
+    "balance": 933.13,
+    "amount": -24.0
+  },
+  {
+    "date": "2024-10-01",
+    "description": "Admin Charge Headoffice * 91.25",
+    "balance": 841.88,
+    "amount": -91.25
+  },
+  {
+    "date": "2024-10-02",
+    "description": "Pos Purchase Settlement 49.00",
+    "balance": 792.88,
+    "amount": -49.0
+  },
+  {
+    "date": "2024-10-02",
+    "description": "Pos Purchase Settlement 113.00",
+    "balance": 679.88,
+    "amount": -113.0
+  },
+  {
+    "date": "2024-10-02",
+    "description": "Pos Purchase Settlement 249.90",
+    "balance": 429.98,
+    "amount": -249.9
+  },
+  {
+    "date": "2024-10-02",
+    "description": "Pos Purchase Settlement 78.00",
+    "balance": 351.98,
+    "amount": -78.0
+  },
+  {
+    "date": "2024-10-02",
+    "description": "Pos Purchase Settlement 288.80",
+    "balance": 63.18,
+    "amount": -288.8
+  },
+  {
+    "date": "2024-10-02",
+    "description": "Pos Purchase Settlement",
+    "balance": 983.18,
+    "amount": 920.0
+  },
+  {
+    "date": "2024-10-03",
+    "description": "Pos Purchase Settlement",
+    "balance": 941.18,
+    "amount": -52.0
+  },
+  {
+    "date": "2024-10-03",
+    "description": "Overseas Purchase Settlement 4.00 T",
+    "balance": 941.01,
+    "amount": -0.17
+  },
+  {
+    "date": "2024-10-04",
+    "description": "Payshap Ext Credit Settlement 130.00",
+    "balance": 71.01,
+    "amount": -870.0
+  },
+  {
+    "date": "2024-10-04",
+    "description": "Notific Fee Sms Notifyme",
+    "balance": 71.01,
+    "amount": 0.0
+  },
+  {
+    "date": "2024-10-05",
+    "description": "Pos Purchase Settlement",
+    "balance": 821.11,
+    "amount": 750.1
+  },
+  {
+    "date": "2024-10-05",
+    "description": "Pos Purchase Settlement",
+    "balance": 646.11,
+    "amount": -175.0
+  },
+  {
+    "date": "2024-10-05",
+    "description": "Payshap Ext Debit Settlement 7.50 A",
+    "balance": 346.11,
+    "amount": -300.0
+  },
+  {
+    "date": "2024-10-06",
+    "description": "Pos Purchase Settlement",
+    "balance": 257.11,
+    "amount": -89.0
+  },
+  {
+    "date": "2024-10-06",
+    "description": "Cashsend Digital Settlement 5.00 T",
+    "balance": 137.11,
+    "amount": -120.0
+  },
+  {
+    "date": "2024-10-08",
+    "description": "Pos Purchase Settlement",
+    "balance": 489.11,
+    "amount": -108.0
+  },
+  {
+    "date": "2024-10-08",
+    "description": "Pos Purchase Settlement",
+    "balance": 439.11,
+    "amount": -50.0
+  },
+  {
+    "date": "2024-10-09",
+    "description": "Pos Purchase Settlement",
+    "balance": 168.21,
+    "amount": -270.9
+  },
+  {
+    "date": "2024-10-10",
+    "description": "Pos Purchase Settlement",
+    "balance": 608.21,
+    "amount": -60.0
+  },
+  {
+    "date": "2024-10-10",
+    "description": "Pos Purchase Settlement",
+    "balance": 545.21,
+    "amount": -63.0
+  },
+  {
+    "date": "2024-10-11",
+    "description": "Pos Purchase Settlement",
+    "balance": 158.01,
+    "amount": -387.2
+  },
+  {
+    "date": "2024-10-12",
+    "description": "Pos Purchase Settlement",
+    "balance": 348.01,
+    "amount": -10.0
+  },
+  {
+    "date": "2024-10-12",
+    "description": "Pos Purchase Settlement",
+    "balance": 325.01,
+    "amount": -23.0
+  },
+  {
+    "date": "2024-10-15",
+    "description": "Pos Purchase Settlement",
+    "balance": 294.01,
+    "amount": -31.0
+  },
+  {
+    "date": "2024-10-16",
+    "description": "Pos Purchase Settlement",
+    "balance": 133.01,
+    "amount": -130.0
+  },
+  {
+    "date": "2024-10-16",
+    "description": "Airtime Debit At 006",
+    "balance": 663.01,
+    "amount": -70.0
+  },
+  {
+    "date": "2024-10-19",
+    "description": "Pos Purchase Settlement",
+    "balance": 894.01,
+    "amount": -69.0
+  },
+  {
+    "date": "2024-10-19",
+    "description": "Pos Purchase Settlement",
+    "balance": 696.01,
+    "amount": -198.0
   }
 ]
