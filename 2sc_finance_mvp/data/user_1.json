@@ -1,0 +1,548 @@
+[
+  {
+    "date": "2025-12-20",
+    "description": "Bal Brought Forward",
+    "category": "Uncategorized",
+    "balance": 835.46,
+    "amount": 0.0
+  },
+  {
+    "date": "2025-12-20",
+    "description": "Pos Purchase Settlement 150.00",
+    "category": "Financial/Admin",
+    "balance": 685.46,
+    "amount": -150.0
+  },
+  {
+    "date": "2025-12-20",
+    "description": "Pos Purchase Settlement 274.86",
+    "category": "Financial/Admin",
+    "balance": 410.6,
+    "amount": -274.86
+  },
+  {
+    "date": "2025-12-20",
+    "description": "Pos Purchase Settlement 835.00",
+    "category": "Financial/Admin",
+    "balance": 575.6,
+    "amount": 165.0
+  },
+  {
+    "date": "2025-12-20",
+    "description": "Pos Purchase Settlement 219.00",
+    "category": "Financial/Admin",
+    "balance": 356.6,
+    "amount": -219.0
+  },
+  {
+    "date": "2025-12-20",
+    "description": "Digital Transf Cr Settlement 2 000.00",
+    "category": "Financial/Admin",
+    "balance": 356.6,
+    "amount": 0.0
+  },
+  {
+    "date": "2025-12-20",
+    "description": "Cashsend Digital Settlement 750.00",
+    "category": "Financial/Admin",
+    "balance": 606.6,
+    "amount": 250.0
+  },
+  {
+    "date": "2025-12-21",
+    "description": "Pos Purchase Settlement 60.00",
+    "category": "Financial/Admin",
+    "balance": 546.6,
+    "amount": -60.0
+  },
+  {
+    "date": "2025-12-21",
+    "description": "Pos Purchase Settlement 339.01",
+    "category": "Financial/Admin",
+    "balance": 207.59,
+    "amount": -339.01
+  },
+  {
+    "date": "2025-12-21",
+    "description": "Pos Purchase Settlement 844.07",
+    "category": "Financial/Admin",
+    "balance": 363.52,
+    "amount": 155.93
+  },
+  {
+    "date": "2025-12-21",
+    "description": "Pos Purchase Settlement 2 798.00",
+    "category": "Financial/Admin",
+    "balance": 565.52,
+    "amount": 202.0
+  },
+  {
+    "date": "2025-12-23",
+    "description": "Digital Transf Cr Settlement 2 000.00",
+    "category": "Financial/Admin",
+    "balance": 565.52,
+    "amount": 0.0
+  },
+  {
+    "date": "2025-12-23",
+    "description": "Pos Purchase Settlement 500.00",
+    "category": "Financial/Admin",
+    "balance": 65.52,
+    "amount": -500.0
+  },
+  {
+    "date": "2025-12-23",
+    "description": "Pos Purchase Settlement 59.00",
+    "category": "Financial/Admin",
+    "balance": 6.52,
+    "amount": -59.0
+  },
+  {
+    "date": "2025-12-23",
+    "description": "Pos Purchase Settlement 1 200.00",
+    "category": "Financial/Admin",
+    "balance": 806.52,
+    "amount": 800.0
+  },
+  {
+    "date": "2025-12-24",
+    "description": "Cashsend Digital Settlement 100.00",
+    "category": "Financial/Admin",
+    "balance": 706.52,
+    "amount": -100.0
+  },
+  {
+    "date": "2025-12-24",
+    "description": "Pos Purchase Settlement 87.80",
+    "category": "Financial/Admin",
+    "balance": 618.72,
+    "amount": -87.8
+  },
+  {
+    "date": "2025-12-24",
+    "description": "Pos Purchase Settlement 108.00",
+    "category": "Financial/Admin",
+    "balance": 510.72,
+    "amount": -108.0
+  },
+  {
+    "date": "2025-12-24",
+    "description": "Pos Purchase Settlement 315.89",
+    "category": "Financial/Admin",
+    "balance": 194.83,
+    "amount": -315.89
+  },
+  {
+    "date": "2025-12-25",
+    "description": "Cashsend Digital Settlement 500.00",
+    "category": "Financial/Admin",
+    "balance": 694.83,
+    "amount": 500.0
+  },
+  {
+    "date": "2025-12-25",
+    "description": "Pos Purchase Settlement 45.00",
+    "category": "Financial/Admin",
+    "balance": 649.83,
+    "amount": -45.0
+  },
+  {
+    "date": "2025-12-25",
+    "description": "Pos Purchase Settlement 90.00",
+    "category": "Financial/Admin",
+    "balance": 559.83,
+    "amount": -90.0
+  },
+  {
+    "date": "2025-12-25",
+    "description": "Pos Purchase Settlement 451.00",
+    "category": "Financial/Admin",
+    "balance": 108.83,
+    "amount": -451.0
+  },
+  {
+    "date": "2025-12-25",
+    "description": "Pos Purchase Settlement 298.52",
+    "category": "Financial/Admin",
+    "balance": 810.31,
+    "amount": 701.48
+  },
+  {
+    "date": "2025-12-25",
+    "description": "Digital Transf Dt Settlement 1 000.00",
+    "category": "Financial/Admin",
+    "balance": 810.31,
+    "amount": 0.0
+  },
+  {
+    "date": "2025-12-27",
+    "description": "Acb Debit:External Settlement 530.93",
+    "category": "Financial/Admin",
+    "balance": 279.38,
+    "amount": -530.93
+  },
+  {
+    "date": "2025-12-28",
+    "description": "Pos Purchase Settlement 74.00",
+    "category": "Financial/Admin",
+    "balance": 205.38,
+    "amount": -74.0
+  },
+  {
+    "date": "2025-12-28",
+    "description": "Pos Purchase Settlement 3 600.00",
+    "category": "Financial/Admin",
+    "balance": 605.38,
+    "amount": 400.0
+  },
+  {
+    "date": "2025-12-28",
+    "description": "Overseas Purchase Settlement 81.99",
+    "category": "Financial/Admin",
+    "balance": 523.39,
+    "amount": -81.99
+  },
+  {
+    "date": "2025-12-28",
+    "description": "Pos Purchase Settlement 801.83",
+    "category": "Financial/Admin",
+    "balance": 721.56,
+    "amount": 198.17
+  },
+  {
+    "date": "2025-12-28",
+    "description": "Pos Cash Wdl Settlement 50.00",
+    "category": "Financial/Admin",
+    "balance": 671.56,
+    "amount": -50.0
+  },
+  {
+    "date": "2025-12-28",
+    "description": "Pos Purchase Settlement 174.97",
+    "category": "Financial/Admin",
+    "balance": 496.59,
+    "amount": -174.97
+  },
+  {
+    "date": "2025-12-28",
+    "description": "Transaction Fee Headoffice * 2.05",
+    "category": "Financial/Admin",
+    "balance": 494.54,
+    "amount": -2.05
+  },
+  {
+    "date": "2025-12-30",
+    "description": "Pos Purchase Settlement 5 410.50",
+    "category": "Financial/Admin",
+    "balance": 84.04,
+    "amount": -410.5
+  },
+  {
+    "date": "2025-12-30",
+    "description": "Pos Purchase Settlement 625.00",
+    "category": "Financial/Admin",
+    "balance": 459.04,
+    "amount": 375.0
+  },
+  {
+    "date": "2025-12-30",
+    "description": "Pos Purchase Settlement 405.90",
+    "category": "Financial/Admin",
+    "balance": 53.14,
+    "amount": -405.9
+  },
+  {
+    "date": "2025-12-30",
+    "description": "Pos Purchase Settlement 256.00",
+    "category": "Financial/Admin",
+    "balance": 797.14,
+    "amount": 744.0
+  },
+  {
+    "date": "2025-12-30",
+    "description": "Pos Purchase Settlement 630.00",
+    "category": "Financial/Admin",
+    "balance": 167.14,
+    "amount": -630.0
+  },
+  {
+    "date": "2025-12-30",
+    "description": "Pos Purchase Settlement 103.40",
+    "category": "Financial/Admin",
+    "balance": 63.74,
+    "amount": -103.4
+  },
+  {
+    "date": "2025-12-30",
+    "description": "Pos Purchase Settlement 259.50",
+    "category": "Financial/Admin",
+    "balance": 804.24,
+    "amount": 740.5
+  },
+  {
+    "date": "2025-12-30",
+    "description": "Overseas Purchase Settlement 159.00",
+    "category": "Financial/Admin",
+    "balance": 645.24,
+    "amount": -159.0
+  },
+  {
+    "date": "2025-12-30",
+    "description": "Pos Purchase Settlement 283.10",
+    "category": "Financial/Admin",
+    "balance": 362.14,
+    "amount": -283.1
+  },
+  {
+    "date": "2025-12-30",
+    "description": "Pos Purchase Settlement 120.00",
+    "category": "Financial/Admin",
+    "balance": 242.14,
+    "amount": -120.0
+  },
+  {
+    "date": "2025-12-30",
+    "description": "Pos Purchase Settlement 370.10",
+    "category": "Financial/Admin",
+    "balance": 872.04,
+    "amount": 629.9
+  },
+  {
+    "date": "2025-12-30",
+    "description": "Pos Purchase Settlement 185.00",
+    "category": "Financial/Admin",
+    "balance": 687.04,
+    "amount": -185.0
+  },
+  {
+    "date": "2025-12-30",
+    "description": "Pos Purchase Settlement 45.00",
+    "category": "Financial/Admin",
+    "balance": 642.04,
+    "amount": -45.0
+  },
+  {
+    "date": "2025-12-30",
+    "description": "Pos Purchase Settlement 1 838.91",
+    "category": "Financial/Admin",
+    "balance": 803.13,
+    "amount": 161.09
+  },
+  {
+    "date": "2025-12-30",
+    "description": "Pos Purchase Settlement 211.53",
+    "category": "Financial/Admin",
+    "balance": 591.6,
+    "amount": -211.53
+  },
+  {
+    "date": "2025-12-30",
+    "description": "Pos Purchase Settlement 484.98",
+    "category": "Financial/Admin",
+    "balance": 106.62,
+    "amount": -484.98
+  },
+  {
+    "date": "2025-12-30",
+    "description": "Pos Purchase Settlement",
+    "category": "Financial/Admin",
+    "balance": 716.62,
+    "amount": 610.0
+  },
+  {
+    "date": "2025-12-30",
+    "description": "Transaction Fee Headoffice *",
+    "category": "Financial/Admin",
+    "balance": 712.64,
+    "amount": -3.98
+  },
+  {
+    "date": "2025-12-31",
+    "description": "Immediate Trf Cr .A. 4 000.00",
+    "category": "Transfers",
+    "balance": 712.64,
+    "amount": 0.0
+  },
+  {
+    "date": "2025-12-31",
+    "description": "Pos Purchase Settlement 325.00",
+    "category": "Financial/Admin",
+    "balance": 387.64,
+    "amount": -325.0
+  },
+  {
+    "date": "2025-12-31",
+    "description": "Cashsend Digital Settlement 200.00",
+    "category": "Financial/Admin",
+    "balance": 187.64,
+    "amount": -200.0
+  },
+  {
+    "date": "2026-01-01",
+    "description": "Pos Purchase Settlement 141.94",
+    "category": "Financial/Admin",
+    "balance": 45.7,
+    "amount": -141.94
+  },
+  {
+    "date": "2026-01-03",
+    "description": "Digital Transf Dt Settlement 300.00",
+    "category": "Financial/Admin",
+    "balance": 745.7,
+    "amount": 700.0
+  },
+  {
+    "date": "2026-01-03",
+    "description": "Pos Purchase Settlement 42.00",
+    "category": "Financial/Admin",
+    "balance": 703.7,
+    "amount": -42.0
+  },
+  {
+    "date": "2026-01-03",
+    "description": "Pos Purchase Settlement 31.00",
+    "category": "Financial/Admin",
+    "balance": 672.7,
+    "amount": -31.0
+  },
+  {
+    "date": "2026-01-03",
+    "description": "Pos Purchase Settlement 500.00",
+    "category": "Financial/Admin",
+    "balance": 172.7,
+    "amount": -500.0
+  },
+  {
+    "date": "2026-01-03",
+    "description": "Pos Purchase Settlement 1 000.78",
+    "category": "Financial/Admin",
+    "balance": 171.92,
+    "amount": -0.78
+  },
+  {
+    "date": "2026-01-03",
+    "description": "Overseas Purchase Settlement 0.17",
+    "category": "Financial/Admin",
+    "balance": 171.75,
+    "amount": -0.17
+  },
+  {
+    "date": "2026-01-03",
+    "description": "Pos Purchase Settlement 178.96",
+    "category": "Financial/Admin",
+    "balance": 992.79,
+    "amount": 821.04
+  },
+  {
+    "date": "2026-01-03",
+    "description": "Pos Purchase Settlement 313.27",
+    "category": "Financial/Admin",
+    "balance": 679.52,
+    "amount": -313.27
+  },
+  {
+    "date": "2026-01-04",
+    "description": "Digital Transf Cr Settlement 500.00",
+    "category": "Financial/Admin",
+    "balance": 179.52,
+    "amount": -500.0
+  },
+  {
+    "date": "2026-01-04",
+    "description": "Digital Transf Cr Settlement 1 000.00",
+    "category": "Financial/Admin",
+    "balance": 179.52,
+    "amount": 0.0
+  },
+  {
+    "date": "2026-01-04",
+    "description": "Pos Purchase Settlement 314.90",
+    "category": "Financial/Admin",
+    "balance": 864.62,
+    "amount": 685.1
+  },
+  {
+    "date": "2026-01-06",
+    "description": "Notific Fee Sms Notifyme",
+    "category": "Financial/Admin",
+    "balance": 864.62,
+    "amount": 0.0
+  },
+  {
+    "date": "2026-01-06",
+    "description": "Pos Purchase Settlement 305.00",
+    "category": "Financial/Admin",
+    "balance": 559.62,
+    "amount": -305.0
+  },
+  {
+    "date": "2026-01-06",
+    "description": "Pos Purchase Settlement 198.00",
+    "category": "Financial/Admin",
+    "balance": 361.62,
+    "amount": -198.0
+  },
+  {
+    "date": "2026-01-06",
+    "description": "Pos Purchase Settlement 82.98",
+    "category": "Financial/Admin",
+    "balance": 278.64,
+    "amount": -82.98
+  },
+  {
+    "date": "2026-01-06",
+    "description": "Pos Purchase Settlement 1",
+    "category": "Financial/Admin",
+    "balance": 835.14,
+    "amount": 556.5
+  },
+  {
+    "date": "2026-01-06",
+    "description": "Pos Purchase Settlement",
+    "category": "Financial/Admin",
+    "balance": 335.14,
+    "amount": -500.0
+  },
+  {
+    "date": "2026-01-06",
+    "description": "Pos Purchase Settlement",
+    "category": "Financial/Admin",
+    "balance": 216.14,
+    "amount": -119.0
+  },
+  {
+    "date": "2026-01-07",
+    "description": "Pos Purchase Settlement",
+    "category": "Financial/Admin",
+    "balance": 139.14,
+    "amount": -77.0
+  },
+  {
+    "date": "2026-01-07",
+    "description": "Pos Purchase Settlement",
+    "category": "Financial/Admin",
+    "balance": 121.14,
+    "amount": -18.0
+  },
+  {
+    "date": "2026-01-07",
+    "description": "Pos Purchase Settlement",
+    "category": "Financial/Admin",
+    "balance": 96.14,
+    "amount": -25.0
+  },
+  {
+    "date": "2026-01-07",
+    "description": "Pos Purchase Settlement",
+    "category": "Financial/Admin",
+    "balance": 63.14,
+    "amount": -33.0
+  },
+  {
+    "date": "2026-01-07",
+    "description": "Pos Purchase Settlement",
+    "category": "Financial/Admin",
+    "balance": 10.14,
+    "amount": -53.0
+  }
+]
