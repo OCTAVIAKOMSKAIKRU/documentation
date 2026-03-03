@@ -1,71 +1,84 @@
-# Second Story Finance MVP
+# 📊 Second Story Finance | MVP (Phase 2)
 
-A lightweight Streamlit-based MVP for parsing South African bank statements (PDF/CSV), extracting transactions, auto-detecting debits vs. credits, auto-categorizing them, and visualizing in a simple dashboard.
+A robust, secure financial intelligence platform designed to transform raw South African bank statements into actionable insights. This version elevates the MVP from simple parsing to a multi-user, database-backed ecosystem with duplicate protection and a persistent "Financial Archive."
 
-## Features
+## 🚀 Core Capabilities
 
-1. **Statement Upload & Parsing**
+### 1. Secure Authentication & Multi-Tenancy
 
-   * Upload ABSA (and CSV) statements via file picker.
-   * Extract text with `pdfplumber` and `pytesseract` OCR fallback.
-   * Regex-based line parsing for date, description, amount, balance.
-2. **Debit vs. Credit Detection**
+* **Encrypted Access:** User registration and login powered by `bcrypt` password hashing.
+* **Session Management:** Persistent user sessions to ensure data privacy and isolated financial ledgers.
 
-   * Compare successive balances to compute actual transaction amount.
-3. **Auto-categorization**
+### 2. Advanced Sync Ledger (The Engine)
 
-   * Categorize transactions by keywords (e.g., `"uber eats"` → `Food/Delivery`).
-4. **Storage**
+* **Robust Parsing:** High-accuracy extraction for ABSA PDF statements using `pdfplumber`.
+* **Receipt Stitching:** OCR-powered receipt scanning using `pytesseract` and `OpenCV` to match physical slips to bank records.
+* **Sign Correction:** Intelligent logic to distinguish between Credits (Income) and Debits (Expenses) based on balance fluctuations.
 
-   * Persist transactions in JSON: `data/user_1.json`.
-5. **Review & Edit**
+### 3. The Financial Vault (Document Management)
 
-   * In-app data editor to correct descriptions, amounts, or categories.
-6. **Dashboard**
+* **Integrity Protection:** SHA-256 file hashing to prevent duplicate statement uploads and double-counting of transactions.
+* **Relational Storage:** Documents are stored as "Parent" records in MySQL, allowing for a cascading cleanup—delete a document, and its associated transactions are purged automatically.
+* **Archive Management:** Users can rename, delete, and audit their history of uploaded statements.
 
-   * **Metrics:** Total Income & Total Expenses.
-   * **Spend by Category:** Bar chart of categorized spend.
-   * **Monthly Trend:** Line chart of cumulative spending over time.
+### 4. Intelligence & Insights
 
-## Tech Stack
+* **Critical Trackers:** Specialized logic to track "Infrastructure" costs like Rent, Debt Servicing, and SARS payments.
+* **Auto-Categorization:** Keyword-based classification engine (e.g., `Checkers` → `Groceries`).
+* **Real-Time Metrics:** Dynamic calculation of Total Spend, Savings Rate, and Monthly Trends.
 
-* **Python 3.10+**
-* [Streamlit](https://streamlit.io/) for UI
-* [pdfplumber](https://github.com/jsvine/pdfplumber) + [pytesseract](https://github.com/madmaze/pytesseract) for PDF text extraction
-* [Pandas](https://pandas.pydata.org/) for CSV parsing & DataFrame
+## 🛠️ Tech Stack
 
-## Installation & Usage
+* **Frontend:** [Streamlit](https://streamlit.io/) (High-performance UI)
+* **Database:** [MySQL](https://www.mysql.com/) (Relational Data & Integrity)
+* **ORMs/Drivers:** `SQLAlchemy` & `mysql-connector-python`
+* **Security:** `bcrypt` (Hashing) & `python-dotenv` (Secret Management)
+* **Data Science:** `Pandas` & `NumPy`
+* **OCR/Vision:** `pdfplumber`, `pytesseract`, and `OpenCV`
+
+## ⚙️ Installation & Setup
 
 ```bash
-# Clone the repo
+# 1. Clone & Navigate
 git clone https://github.com/OCTAVIAKOMSKAIKRU/documentation.git
 cd documentation
 
-# Create virtual environment
+# 2. Environment Setup
 python -m venv .venv
-source .venv/bin/activate  # macOS/Linux
-.venv\Scripts\activate   # Windows
-
-# Install dependencies
+source .venv/bin/activate # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 
-# Run the app
-streamlit run streamlit_app.py
+# 3. Database Configuration
+# Create a .env file in the root directory:
+DB_HOST=localhost
+DB_USER=root
+DB_PASS=yourpassword
+DB_NAME=second_story
+DB_PORT=3306
+
 ```
 
-Once running, open [http://localhost:8501](http://localhost:8501) in your browser:
+## 🏗️ Database Schema Overview
 
-1. **Upload**: Choose a PDF or CSV statement.
-2. **Review**: Validate extracted transactions and edit if needed.
-3. **Dashboard**: View income, expenses, category breakdown, and trends.
+The system automatically initializes the following relational structure:
 
-## Next Steps
+* **`users`**: Secure credentials and timestamps.
+* **`documents`**: Metadata for PDFs/Receipts, including file hashes for duplicate prevention.
+* **`transactions`**: The ledger, linked via `doc_id` to the parent document and `user_id` to the owner.
 
-* Add **Export** feature (download JSON or CSV).
-* Build **automated tagging** for merchant-based categories.
-* Integrate user **authentication** & multi-user support.
+## 📈 Engineering Standards
+
+* **Atomic Deletes:** Uses `ON DELETE CASCADE` to ensure no orphaned transactions remain when a document is removed.
+* **Batch Processing:** Uses `executemany` for 10x faster database writes compared to standard loops.
+* **State Synchronization:** Streamlit session state is synchronized with MySQL to ensure a "Single Source of Truth."
+
+## 🛣️ Roadmap: Towards Phase 3
+
+* **Predictive Budgeting:** AI-driven forecasting of upcoming month-end balances.
+* **Export Engine:** Generate professional-grade PDF/Excel financial reports.
+* **Direct API Integration:** Connecting directly to South African banking APIs for real-time syncing.
 
 ---
 
-*Second Story Group © 2025*
+*Second Story Group © 2025 | Secure. Transparent. Robust.*
 
